@@ -3,6 +3,7 @@ package stubs
 var CreateChannel = "Broker.CreateChannel"
 var Publish = "Broker.Publish"
 var Subscribe = "Broker.Subscribe"
+var Multiply = "Factory.Multiply"
 
 type Pair struct {
 	X int
@@ -11,19 +12,18 @@ type Pair struct {
 
 type PublishRequest struct {
 	Topic string
-	Pair Pair
+	Pair  Pair
 }
 
-
 type ChannelRequest struct {
-	Topic string
+	Topic  string
 	Buffer int
 }
 
 type Subscription struct {
-	Topic string
+	Topic          string
 	FactoryAddress string
-	Callback string
+	Callback       string
 }
 
 type JobReport struct {
