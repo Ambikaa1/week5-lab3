@@ -10,9 +10,15 @@ type Pair struct {
 	Y int
 }
 
+type Triplet struct {
+	X int
+	Y int
+	Z int
+}
+
 type PublishRequest struct {
-	Topic string
-	Pair  Pair
+	Topic   string
+	Triplet Triplet
 }
 
 type ChannelRequest struct {
